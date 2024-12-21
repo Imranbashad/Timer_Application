@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+  color: white;
+}
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.colon {
+  font-size: 35px;
+  margin: 0 5px;
+}
+input {
+  border-style: none;
+  width: 80px;
+  padding: 10px;
+  background-color: #34344a;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+::placeholder {
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+.timer-input {
+  padding: 20px;
+  background: #34344a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#startTimer {
+  background: #f0f757;
+  width: 100px;
+  padding: 8px;
+  border-radius: 26px;
+  border-style: none;
+  cursor: pointer;
+}
+#Current-Timers {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  background: #39393e;
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#noTimersMessage {
+  margin-top: 20px;
+  text-align: center;
+}
+.active-timers {
+  margin-top: 20px;
+}
+.timer {
+  padding: 20px;
+  background: #34344a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+.timer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.time-display {
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+.timer-ended .time-display {
+  width: 100%;
+  text-align: center;
+  color: #34344a;
+}
+.timer-ended .time-label {
+  display: none;
+}
+.delete-timer,
+.stop-timer {
+  background: #f0f757;
+  width: 100px;
+  padding: 8px;
+  border-radius: 26px;
+  border-style: none;
+  cursor: pointer;
+}
+.stop-timer {
+  background: #34344a;
+  color: white;
+  width: 100px;
+}

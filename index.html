@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timers</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Multiple Timers App</h1>
+      <div class="timer-input">
+        <span>Set Time :</span>
+        <div>
+          <input type="number" id="hours" placeholder="hh" min="0" max="23" />
+          <span class="colon">:</span>
+          <input type="number" id="minutes" placeholder="mm" min="0" max="59" />
+          <span class="colon">:</span>
+          <input type="number" id="seconds" placeholder="ss" min="0" max="59" />
+        </div>
+        <button id="startTimer">Set</button>
+      </div>
+      <div id="Current-Timers">Current Timers</div>
+      <div id="noTimersMessage">You have no timers currently!</div>
+      <div id="activeTimers" class="active-timers"></div>
+    </div>
+    <audio id="alarmSound" src="mixkit-rooster-crowing-in-the-morning-2462.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
